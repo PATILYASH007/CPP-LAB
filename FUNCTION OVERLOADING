@@ -1,0 +1,59 @@
+#include<iostream>
+#include<math.h>
+#define pi 3.142
+using namespace std;
+class Circle{
+	int center_X;
+	int center_Y;
+	int rad;
+	int circumference,area;
+	public:
+		Circle()
+		{
+			center_X=0;
+			center_Y=0;	
+			rad=5;
+			calCircumference();
+			calArea();	
+		}
+		Circle(int cX,int cY)
+		{
+			center_X=cX;
+			center_Y=cY;
+			rad=5;
+			calCircumference();
+			calArea();
+		}	
+		Circle(int cX,int cY,int r)
+		{
+			center_X=cX;
+			center_Y=cY;
+			rad=r;
+			calCircumference();
+			calArea();
+		}
+		int calCircumference(){
+			circumference=2*pi*rad;
+			return circumference;
+		}
+		int calArea(){
+			area=pi*rad*rad;
+			return area;
+		}
+		int getCircumference(int c){
+			circumference=c;
+		}
+		int getArea(int a){
+			area=a;
+		}
+};
+class Line{
+		int x1,x2,y1,y2,slop,interceptX,interceptY;
+		public:
+			void getPt1(int x,int y){
+				
+			}
+};
+int main(){
+	
+}
